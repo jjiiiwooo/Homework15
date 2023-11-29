@@ -64,7 +64,7 @@ void shell_sort(int list[], int n) {
 void Random(int array[], int n) {
     srand((unsigned)time(NULL));
     for (int i = 0; i < n; i++) {
-        array[i] = rand() % 100 + 1;
+        array[i] = rand() % 100;
         //중복없이
         for (int j = 0; j < i; j++) {
             if (array[i] == array[j])i--;
